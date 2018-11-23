@@ -1,0 +1,111 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20181119113711
+Username: CIB\reisru
+RunAs User: CIB\reisru
+Machine: DK966416 (Microsoft Windows NT 6.1.7601 Service Pack 1)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5452
+PSVersion: 5.1.14409.1012
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14409.1012
+BuildVersion: 10.0.14409.1012
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is 1.txt
+PS H:\MY_STUFF\Learning\powershell\udemy_course> ls
+
+
+    Directory: H:\MY_STUFF\Learning\powershell\udemy_course
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/19/2018  11:37 AM            622 1.txt
+
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> get-date
+
+Monday, November 19, 2018 11:37:23 AM
+
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> get-date date
+>> TerminatingError(Get-Date): "Cannot bind parameter 'Date'. Cannot convert value "date" to type "System.DateTime". Error: "The string was not recognized as a valid DateTime. There is an unknown word starting at index 0.""
+Get-Date : Cannot bind parameter 'Date'. Cannot convert value "date" to type "System.DateTime". Error: "The string was 
+not recognized as a valid DateTime. There is an unknown word starting at index 0."
+At line:1 char:10
++ get-date date
++          ~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Date], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetDateCommand
+Get-Date : Cannot bind parameter 'Date'. Cannot convert value "date" to type "System.DateTime". Error: "The string was
+not recognized as a valid DateTime. There is an unknown word starting at index 0."
+At line:1 char:10
++ get-date date
++          ~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Date], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetDateCommand
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> get-date Date
+>> TerminatingError(Get-Date): "Cannot bind parameter 'Date'. Cannot convert value "Date" to type "System.DateTime". Error: "The string was not recognized as a valid DateTime. There is an unknown word starting at index 0.""
+Get-Date : Cannot bind parameter 'Date'. Cannot convert value "Date" to type "System.DateTime". Error: "The string was 
+not recognized as a valid DateTime. There is an unknown word starting at index 0."
+At line:1 char:10
++ get-date Date
++          ~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Date], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetDateCommand
+Get-Date : Cannot bind parameter 'Date'. Cannot convert value "Date" to type "System.DateTime". Error: "The string was
+not recognized as a valid DateTime. There is an unknown word starting at index 0."
+At line:1 char:10
++ get-date Date
++          ~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Date], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetDateCommand
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> Get-Date -DisplayHint Date
+
+Monday, November 19, 2018
+
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> get-disks
+get-disks : The term 'get-disks' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-disks
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-disks:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-disks : The term 'get-disks' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-disks
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-disks:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> get-network
+get-network : The term 'get-network' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-network
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-network:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-network : The term 'get-network' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-network
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-network:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS H:\MY_STUFF\Learning\powershell\udemy_course> notepad c:\Windows\System32\drivers\etc\hosts
+PS H:\MY_STUFF\Learning\powershell\udemy_course> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20181119113910
+**********************
